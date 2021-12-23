@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+ 
+     <!-- style -->
+     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style2.css" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ 
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/662346788c.js" crossorigin="anonymous"></script>
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+    
+    <title>Pinguins Webs</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center pb-3 pt-3 md:pb-5 md:pt-1">
+      <div class="flex-1 flex justify-between items-center">
+        <img src="img/logo.svg" class="w-52 pt-2 md:pt-4 md:w-52 md:ml-5" alt="logo" />
+      </div>
+
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block"
+        ><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav class="md:pt-6 md:mr-5">
+          <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 md:text-sm font-poppins">
+            <li class="nav__item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:text-black active-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:text-black" href="#informasi">PROJECT</a>
+            </li>
+            <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:text-black" href="#persyaratan">MEMBERS</a>
+            </li>
+            <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:text-black" href="http://bit.ly/joinUBL">ABOUT</a>
+            </li>
+            <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:text-black" href="http://bit.ly/joinUBL">ABOUT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- Content -->
+      <!-- home -->
+      <section class="home section" id="home">
+        <div class="bg-gray-200 h-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2"> 
+            <div class="font-poppins text-base ml-10 mr-10 md:ml-20 md:mr-10 md:p-1 mt-14 mb-14 md:mt-15 md:mb-15 text-center md:text-left">
+              <h1 class="text-black text-5xl font-extrabold md:font-extrabold" style="text-transform: uppercase">WELCOME TO PINGUINS WEBSITES</h1>
+              <p class="font-poppins text-black mt-5 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum dolorum quos, et repellat iste assumenda architecto, molestiae nemo dicta voluptates provident neque ipsam fugit, laboriosam inventore nulla numquam voluptas!</p>
+              <a
+                href="#"
+                class="font-poppins bg-white hover:bg-black duration-200 text-black hover:text-white rounded-full py-3 px-14 md:py-3 md:px-12 w-auto text-xl md:text-lg"
+                >Project <span class="fas fa-angle-double-right"></span></a
+              ><br /><br /><br/>
+              <a
+                href="#"
+                class="font-poppins bg-black hover:bg-white duration-200 text-white hover:text-black rounded-full py-3 px-14 md:py-3 md:px-12 w-auto text-xl md:text-lg"
+                >Members</a
+              >
+            </div>
+
+            <div class="order-first md:order-last w-full pt-12 px-5 md:px-52">
+              <img src="img/gambar1.svg" alt="team" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Home -->
+    
+      <!-- Project -->
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 gap-10 mt-16 mb-16 ml-10 mr-10 md:grid-cols-4">
+          <div class="border bg-gray-200 shadow-lg">
+            <img src="img/RE7.jpg" alt="game" />
+            <h1 class="mt-2 ml-4 mb-3 font-extrabold">Resident Evil VII</h1>
+            <div class="flex">
+              <a class="bg-gray-700 hover:bg-black duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3" href="save.html">Buy</a>
+              <h1 class="ml-auto mr-3 mt-2 mb-1 mt-1 md:ml-auto">$50.00</h1>
+            </div>
+          </div>
+
+          <div class="border bg-gray-200 shadow-lg">
+            <img src="img/RE82.jpg" alt="game" />
+            <h1 class="mt-2 ml-4 mb-3 font-extrabold">Resident Evil VIII</h1>
+            <div class="flex">
+              <a class="bg-gray-700 hover:bg-black duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3" href="save.html">Buy</a>
+              <!-- <h1 class="ml-96 mb-1 mt-1 md:ml-32 mb-1 mt-1">$50.00</h1> -->
+              <h1 class="ml-auto mr-3 mt-2 mb-1 mt-1 md:ml-auto">$50.00</h1>
+            </div>
+          </div>
+
+          <div class="border bg-gray-200 shadow-lg">
+            <img src="img/Webp.net-resizeimage-2.jpg" alt="game" />
+            <h1 class="mt-2 ml-4 mb-3 font-extrabold">Ghost Wire Tokyo</h1>
+            <div class="flex">
+              <a class="bg-gray-700 hover:bg-black duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3" href="save.html">Buy</a>
+              <!-- <h1 class="ml-96 mb-1 mt-1 md:ml-32 mb-1 mt-1">$50.00</h1> -->
+              <h1 class="ml-auto mr-3 mt-2 mb-1 mt-1 md:ml-auto">$50.00</h1>
+            </div>
+          </div>
+
+          <div class="border bg-gray-200 shadow-lg">
+            <img src="img/tetra-preorder-standard-edition-epic-image-hero-carrousel-3840x2160-3840x2160-430977812.png" alt="game" />
+            <h1 class="mt-2 ml-4 mb-3 font-extrabold">Far Cry 6</h1>
+            <div class="flex">
+              <a class="bg-gray-700 hover:bg-black duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3" href="save.html">Buy</a>
+              <!-- <h1 class="ml-96 mb-1 mt-1 md:ml-32 mb-1 mt-1">$50.00</h1> -->
+              <h1 class="ml-auto mr-3 mt-2 mb-1 mt-1 md:ml-auto">$50.00</h1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Members -->
+      <!-- End Members -->
+
+      <!-- About -->
+      <!-- End About -->
+    
+    <!-- End Content -->
+
+    <!-- footer -->
+    <div class="bg-black h-auto md:h-20">
+      <div class="container mx-auto">
+        <p class="text-white text-center pt-7 pb-7 font-poppins px-10">
+          Copyright @ 2021. <a class="text-gray-600 md:hover:text-white" href="#">Pinguins</a>. All Right Reserved
+        </p>
+      </div>
+    </div>
+    <!-- Akhir footer -->
+
+    <!-- Javascript -->
+      <!-- Scroll Back to Top -->
+      <script src="js/up_btn.js"></script>
+      <script>
+        up({});
+      </script>
+      <!-- Scroll Back to Top -->
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    <!-- end Javascript -->
+  </body>
+</html>
